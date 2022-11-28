@@ -50,7 +50,7 @@ function ComputerVision() {
             return (
               <tr key={index}>
                 <td>{item.name}</td>
-                <td><ProgressBar now={item.confidence} label={`${item.confidence.toFixed(2)}%`} variant="success" min="0" max="1"/></td>
+                <td><ProgressBar now={item.confidence*100} label={`${item.confidence.toFixed(2)*100}%`} variant="success" min="0" max="100"/></td>
               </tr>
             );
           })}
@@ -93,7 +93,7 @@ function ComputerVision() {
             return (
               <tr key={index}>
                 <td>{item.name}</td>
-                <td><ProgressBar now={item.score} label={`${item.score.toFixed(2)}%`} variant="success" min="0" max="1"/></td>
+                <td><ProgressBar now={item.score*100} label={`${item.score.toFixed(2)*100}%`} variant="success" min="0" max="100"/></td>
               </tr>
             );
           })}
