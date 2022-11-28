@@ -15,8 +15,8 @@ const endpoint = process.env.REACT_APP_AZURE_COMPUTER_VISION_ENDPOINT;
 //const endpoint = SECRET_ENDPOINT;
 
  
-console.log(`key = ${key}`)
-console.log(`endpoint = ${endpoint}`)
+//console.log(`key = ${key}`)
+//console.log(`endpoint = ${endpoint}`)
 
 // Cognitive service features
 const visualFeatures = [
@@ -33,8 +33,8 @@ const visualFeatures = [
 
 export const isConfigured = () => {
     const result = (key && endpoint && (key.length > 0) && (endpoint.length > 0)) ? true : false;
-    console.log(`key = ${key}`)
-    console.log(`endpoint = ${endpoint}`)
+    //console.log(`key = ${key}`)
+   // console.log(`endpoint = ${endpoint}`)
     console.log(`ComputerVision isConfigured = ${result}`)
     return result;
 }
