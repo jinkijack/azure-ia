@@ -10,7 +10,7 @@ import { ApiKeyCredentials } from '@azure/ms-rest-js';
 //const endpoint = process.env.REACT_APP_AZURE_COMPUTER_VISION_ENDPOINT;
 //
 const SECRET_KEY;
-const SECRET_ENDPOINT
+const SECRET_ENDPOINT;
 const key = SECRET_KEY;
 const endpoint = SECRET_ENDPOINT;
 
