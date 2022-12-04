@@ -9,7 +9,7 @@ import { computerVision } from './components/ComputerVision/azure-cognitiveservi
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div>
+  <div className='teste'>
     <Header />
     <Banner
       videoTitle={"Doguinho ou Muffin?"}
