@@ -6,13 +6,13 @@ import { ApiKeyCredentials } from '@azure/ms-rest-js';
 //import RandomImageUrl from './DefaultImages';
 
 // Authentication requirements
-//const key = process.env.REACT_APP_AZURE_COMPUTER_VISION_KEY;
-//const endpoint = process.env.REACT_APP_AZURE_COMPUTER_VISION_ENDPOINT;
+const key = process.env.REACT_APP_AZURE_COMPUTER_VISION_KEY;
+const endpoint = process.env.REACT_APP_AZURE_COMPUTER_VISION_ENDPOINT;
 //
 //const SECRET_KEY = process.env.REACT_APP_AZURE_COMPUTER_VISION_KEY;
 //const SECRET_ENDPOINT = process.env.REACT_APP_AZURE_COMPUTER_VISION_ENDPOINT;
-const key = "SECRET_KEY";
-const endpoint = "SECRET_ENDPOINT";
+//const key = "SECRET_KEY";
+//const endpoint = "SECRET_ENDPOINT";
 
 
 //console.log(`key = ${key}`)
