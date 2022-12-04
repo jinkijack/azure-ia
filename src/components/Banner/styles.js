@@ -27,6 +27,7 @@ ContentAreaContainer.Item = styled.div`
 `;
 
 ContentAreaContainer.Category = styled.h1`
+
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -48,6 +49,7 @@ ContentAreaContainer.Category = styled.h1`
 `;
 
 ContentAreaContainer.Description = styled.p`
+font-size: 22px;
   @media (max-width: 800px) {
     display: none;
   }
@@ -56,10 +58,11 @@ ContentAreaContainer.Description = styled.p`
 ContentAreaContainer.Title = styled.h2`
   font-style: normal;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 55px;
   line-height: 1;
   margin-top: 0;
   margin-bottom: 32px;
+  
 
   @media (max-width: 800px) {
     font-size: 32px;
