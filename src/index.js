@@ -9,17 +9,17 @@ import { computerVision } from './components/ComputerVision/azure-cognitiveservi
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <div>
-        <Header />
-        <Banner
-          videoTitle={"Meu Video"}
-          url={"https://www.youtube.com/watch?v=3BhkeY974Rg"}
-          videoDescription={"IFSULDEMINAS"}
-          />
+  <div>
+    <Header />
+    <Banner
+      videoTitle={"Doguinho ou Muffin?"}
+      url={"https://www.youtube.com/watch?v=0yCJMt9Mx9c"}
+      videoDescription={"Através dessa ferramenta faremos com que a IA reconheça se a foto é de um doguinho ou de um muffin."}
+    />
 
-        <ComputerVision />
+    <ComputerVision />
 
-    </div>
+  </div>
 );
 
 

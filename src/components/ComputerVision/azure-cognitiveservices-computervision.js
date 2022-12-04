@@ -6,15 +6,15 @@ import { ApiKeyCredentials } from '@azure/ms-rest-js';
 //import RandomImageUrl from './DefaultImages';
 
 // Authentication requirements
-const key = process.env.REACT_APP_AZURE_COMPUTER_VISION_KEY;
-const endpoint = process.env.REACT_APP_AZURE_COMPUTER_VISION_ENDPOINT;
+//const key = process.env.REACT_APP_AZURE_COMPUTER_VISION_KEY;
+//const endpoint = process.env.REACT_APP_AZURE_COMPUTER_VISION_ENDPOINT;
 //
 //const SECRET_KEY = process.env.REACT_APP_AZURE_COMPUTER_VISION_KEY;
 //const SECRET_ENDPOINT = process.env.REACT_APP_AZURE_COMPUTER_VISION_ENDPOINT;
-//const key = SECRET_KEY;
-//const endpoint = SECRET_ENDPOINT;
+const key = "SECRET_KEY";
+const endpoint = "SECRET_ENDPOINT";
 
- 
+
 //console.log(`key = ${key}`)
 //console.log(`endpoint = ${endpoint}`)
 
@@ -34,7 +34,7 @@ const visualFeatures = [
 export const isConfigured = () => {
     const result = (key && endpoint && (key.length > 0) && (endpoint.length > 0)) ? true : false;
     //console.log(`key = ${key}`)
-   // console.log(`endpoint = ${endpoint}`)
+    // console.log(`endpoint = ${endpoint}`)
     console.log(`ComputerVision isConfigured = ${result}`)
     return result;
 }
@@ -48,10 +48,10 @@ export const computerVision = async (url) => {
 
     // get image URL - entered in form or random from Default Images
     const urlToAnalyze = url;// || RandomImageUrl();
-    
+
     // analyze image
-    const analysis = await computerVisionClient.analyzeImage(urlToAnalyze, { visualFeatures,language:"pt" });
+    const analysis = await computerVisionClient.analyzeImage(urlToAnalyze, { visualFeatures, language: "pt" });
 
     // all information about image
-    return { "URL": urlToAnalyze, ...analysis};
+    return { "URL": urlToAnalyze, ...analysis };
 }
